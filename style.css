@@ -1,11 +1,4 @@
 /* Fontovi */
-@font-face {
-  font-family: "Relindo";
-  src: url("../assets/Relindo.otf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 /* Osnovni stil tela */
@@ -26,9 +19,9 @@ body {
 
 /* Naslov */
 h1 {
-  font-family: "Relindo", cursive;
-  font-size: 100px;
-  margin: 20px 0 40px;
+  font-family: "Montserrat", sans-serif; /* kompatibilan font */
+  font-size: 120px;
+  margin: 40px 0 60px;
   color: #ffdd57;
   letter-spacing: 8px;
   transition: transform 0.5s ease;
@@ -43,28 +36,28 @@ h1:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
+  gap: 25px;
+  margin-bottom: 60px;
 }
 
 /* Red za label i select */
 .controls-row {
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size: 24px;
+  gap: 20px;
+  font-size: 32px; /* veći font */
   font-weight: 700;
 }
 
 .controls-row label {
-  font-size: 24px;
+  font-size: 32px; /* veći font */
   font-weight: 700;
 }
 
 select {
-  font-size: 22px;
-  padding: 8px 16px;
-  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 12px;
   border: none;
   background: #1e2140;
   color: #fff;
@@ -78,8 +71,8 @@ select:hover {
 }
 
 button {
-  font-size: 28px;
-  padding: 15px 40px;
+  font-size: 32px;
+  padding: 18px 50px;
   border-radius: 20px;
   border: none;
   background: #ffdd57;
@@ -92,7 +85,7 @@ button {
 button:hover {
   transform: scale(1.05);
   background: #ffc107;
-  box-shadow: 0 0 12px #ffdd57; /* lagani glow */
+  box-shadow: 0 0 12px #ffdd57;
 }
 
 /* Kontejner kartica */
@@ -107,8 +100,8 @@ button:hover {
 
 /* Kartice */
 .card {
-  width: 300px;
-  height: 180px;
+  width: 320px;
+  height: 200px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s, box-shadow 0.3s;
@@ -153,30 +146,38 @@ button:hover {
 
 /* Mobile stilovi */
 @media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
   h1 {
     font-size: 80px;
-    letter-spacing: 7px;
+    margin-bottom: 50px;
   }
 
   .controls-row {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 50px;
+    flex-direction: row; /* label i select pored */
+    gap: 15px;
+    font-size: 36px; /* veći font na mobilnom */
+  }
+
+  .controls-row label {
+    font-size: 36px;
   }
 
   select {
-    font-size: 30px;
-    padding: 6px 12px;
+    font-size: 28px;
+    padding: 10px 18px;
   }
 
   button {
-    font-size: 30px;
-    padding: 12px 30px;
+    font-size: 28px;
+    padding: 15px 40px;
   }
 
   .card {
-    width: 270px;
-    height: 150px;
+    width: 280px;
+    height: 170px;
   }
 
   .card .front,

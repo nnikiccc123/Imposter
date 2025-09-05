@@ -1,46 +1,11 @@
-let words = [
-  "jabuka",
-  "kruška",
-  "banana",
-  "trešnja",
-  "breskva",
-  "limun",
-  "mandarina",
-  "ananas",
-  "lubenica",
-  "dinja",
-  "mačka",
-  "pas",
-  "tigar",
-  "lav",
-  "zebra",
-  "slon",
-  "konj",
-  "krava",
-  "koza",
-  "ovca",
-  "fudbal",
-  "košarka",
-  "tenis",
-  "odbojka",
-  "rukomet",
-  "plivanje",
-  "skijanje",
-  "trčanje",
-  "biciklizam",
-  "hokej",
-  "Beograd",
-  "Novi Sad",
-  "Niš",
-  "Kragujevac",
-  "Subotica",
-  "Valjevo",
-  "Čačak",
-  "Kraljevo",
-  "Sombor",
-  "Šabac",
-  // dodaj još dok ne bude 300+
-];
+let words = [];
+
+fetch("words.json")
+  .then((response) => response.json())
+  .then((data) => {
+    words = data.words;
+  })
+  .catch((err) => console.error("Greška pri učitavanju reči:", err));
 
 let chosen = [];
 let currentIndex = 0;
