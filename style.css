@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(135deg, #121421, #1e1f3d);
   color: #fff;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  padding: 0 10px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +24,9 @@ body {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif; /* kompatibilan font */
+  font-family: "Montserrat", sans-serif;
   font-size: 120px;
-  margin: 40px 0 60px;
+  margin: 20px 0 30px;
   color: #ffdd57;
   letter-spacing: 8px;
   transition: transform 0.5s ease;
@@ -34,6 +42,7 @@ h1:hover {
   align-items: center;
   gap: 25px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .controls-row {
@@ -145,7 +154,7 @@ button:hover {
 
   h1 {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin: 10px 0 20px;
   }
 
   .controls-row {
