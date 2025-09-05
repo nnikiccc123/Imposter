@@ -25,7 +25,7 @@ function startGame() {
   let word = words[Math.floor(Math.random() * words.length)];
 
   chosen = Array(totalPlayers - 1).fill(word);
-  chosen.push("Imposter"); // impostor
+  chosen.push("Imposter");
   chosen.sort(() => Math.random() - 0.5);
 
   showNextCard();
@@ -50,11 +50,11 @@ function showNextCard() {
 
   card.onclick = () => {
     if (!showingWord) {
-      card.classList.add("flipped"); // flip animacija
+      card.classList.add("flipped");
       showingWord = true;
     } else {
       currentIndex++;
-      showNextCard(); // sledeći igrač
+      showNextCard();
     }
   };
 

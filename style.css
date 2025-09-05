@@ -1,7 +1,5 @@
-/* Fontovi */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-/* Osnovni stil tela */
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(135deg, #121421, #1e1f3d);
@@ -17,7 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Naslov */
 h1 {
   font-family: "Montserrat", sans-serif; /* kompatibilan font */
   font-size: 120px;
@@ -31,7 +28,6 @@ h1:hover {
   transform: scale(1.05);
 }
 
-/* Kontrolni deo (label + select + dugme) */
 .controls {
   display: flex;
   flex-direction: column;
@@ -40,17 +36,16 @@ h1:hover {
   margin-bottom: 60px;
 }
 
-/* Red za label i select */
 .controls-row {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 32px; /* veći font */
+  font-size: 32px;
   font-weight: 700;
 }
 
 .controls-row label {
-  font-size: 32px; /* veći font */
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -67,7 +62,7 @@ select {
 }
 
 select:hover {
-  box-shadow: 0 0 8px #ffdd57; /* lagani glow */
+  box-shadow: 0 0 8px #ffdd57;
 }
 
 button {
@@ -88,7 +83,6 @@ button:hover {
   box-shadow: 0 0 12px #ffdd57;
 }
 
-/* Kontejner kartica */
 #cardContainer {
   perspective: 1000px;
   display: flex;
@@ -98,7 +92,6 @@ button:hover {
   flex-wrap: wrap;
 }
 
-/* Kartice */
 .card {
   width: 320px;
   height: 200px;
@@ -156,9 +149,9 @@ button:hover {
   }
 
   .controls-row {
-    flex-direction: row; /* label i select pored */
+    flex-direction: row;
     gap: 15px;
-    font-size: 36px; /* veći font na mobilnom */
+    font-size: 36px;
   }
 
   .controls-row label {
